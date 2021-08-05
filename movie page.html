@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+<title>Creating a Movie Review Web Page with HTML</title>
+
+
+
+<style>
+    body{
+         background-color: paleturquoise;
+         color:#000000;
+         font-family:"Comic Sans MS";
+        }
+    h1  {
+         font-family:"Comic Sans MS";
+         text-align: center;
+        }
+    h2  {
+         text-align: center;
+         color:#000000;
+        }
+    hr  {
+         color:#000000;
+        }
+    div {
+         font-size: 15px;
+         color:#000000;
+        }
+    ul  {
+         text-align: center;
+         list-style-type:square;
+        }
+        div.stars {
+          width: 270px;
+          display: inline-block;
+        }
+         
+        input.star { display: none; }
+         
+        label.star {
+          float: right;
+          padding: 10px;
+          font-size: 36px;
+          color: #444;
+          transition: all .2s;
+        }
+         
+        input.star:checked ~ label.star:before {
+          content: '\f005';
+          color: #FD4;
+          transition: all .25s;
+        }
+         
+        input.star-5:checked ~ label.star:before {
+          color: #FE7;
+          text-shadow: 0 0 20px #952;
+        }
+         
+        input.star-1:checked ~ label.star:before { color: #F62; }
+         
+        label.star:hover { transform: rotate(-15deg) scale(1.3); }
+         
+        label.star:before {
+          content: '\f006';
+          font-family: FontAwesome;
+        }
+</style>
+</head>
+
+<body>
+
+<h1> Movie Webpage With html </h1>
+<hr/>
+
+<h2> Bahubali-the Beginning </h2>
+
+<div>
+    <p style="float: left;"><img src="images/the-magnum-opus-baahubali-the-beginning.gif"></p>
+    <p> Director:raja mouli</p>
+    <p> Synopsis:Baahubali-The Beginning (2015) is essentially about a tribal warrior boy, Shivudu who learns his past and awaits his destiny. The story is set in and around the fictional kingdom of Mahishmati. </p>
+    <p> Personal Review:  When the director’s latest offering Baahubali: The Conclusion got postponed for almost an year, fans couldn’t bear the delay</p>
+    <p> Link To Trailer: <a href="https://youtu.be/sOEg_YZQsTI"> baahubali-the Beginning - Official Trailer </a> </p>
+    <center><p>Actor List</p></center>
+    <ul>
+        <li><a href="https://en.wikipedia.org/wiki/Prabhas">prabhas </a> - shivudu</li>
+        <li><a href="https://en.wikipedia.org/wiki/Tamannaah">tamannaah</a> - avanthika </li>
+        <li><a href="https://en.wikipedia.org/wiki/Anushka_Shetty">anushka</a> - devasena</li>
+        <div class="stars">
+          <form action="">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form>
+        </div>
+        
+
+
+</div>
+
+<br><br><br><br><br>
+<br>
+<hr/>
+
+<h2> starwars </h2>
+
+<div>
+    <p style="float: left;"><img a src="images/maxresdefault.jpg"></p></div>
+    <p>Director: George Lucas</p>
+    <p>Synopsis: The Imperial Forces under rule of Darth Vader  hold Princess Leia hostage, in their attempts to rule the Galactic Empire. Luke Skywalker and Han Solo, (captain of Millennium Falcon), work with R2-D2 and C-3PO to rescue Leia and bring peace to the Galaxy. </p>
+    <p>Personal Review: Star Wars is my life and I can't wait for the next one to come out.</p>
+    <p>Link To Trailer: <a href="www.youtube.com/watch?v=OMOVFvcNfvE"> Star Wars: Episode VII - The Force Awakens </a> </p>
+    <center><p>Actor List</p></center>
+    <ul>
+        <li><a href="http://www.biography.com/people/harrison-ford-9298701">Harrison Ford</a> - Han Solo </li>
+        <li><a href="http://www.biography.com/people/mark-hamill-9542477">Mark Hamill</a> - Luke Skywalker </li>
+        <li><a href="http://www.biography.com/people/carrie-fisher-9542646"> Carrie Fisher</a> - Leia Organa </li>
+        <div class="stars">
+          <form action="">
+            <input class="star star-5" id="star-5" type="radio" name="star"/>
+            <label class="star star-5" for="star-5"></label>
+            <input class="star star-4" id="star-4" type="radio" name="star"/>
+            <label class="star star-4" for="star-4"></label>
+            <input class="star star-3" id="star-3" type="radio" name="star"/>
+            <label class="star star-3" for="star-3"></label>
+            <input class="star star-2" id="star-2" type="radio" name="star"/>
+            <label class="star star-2" for="star-2"></label>
+            <input class="star star-1" id="star-1" type="radio" name="star"/>
+            <label class="star star-1" for="star-1"></label>
+          </form>
+        </div>
+        
+
+<br>
+<br>
+<br>
+<br>
+<hr/>
+
+<h2> Big Hero 6 </h2>
+
+
+<div>
+    <p style="float: left;"><img src="images/big-hro-6.jpg"/></p>
+    <p>Director: Chris Williams</p>
+    <p> Synonpsis: Robotics enthusiast Hiro lives in San Fransokyo. Tadashi creates Baymax.A cute robot whose purpose is to take care of people and becomes Hiro's closest companion, Tadashi dies and in order Hiro sets out to find out who the killer is, he transforms Baymax and his other friends, Go Go, Wasabi, Honey Lemon and Fred into the high-tech superheroes known as Big Hero 6.</p>
+    <p> Personal Review: Big hero 6 is one of the cutest movies I've ever seen. Hiro has an older brother named Tadashi and he goes to a 'nerd school' so called by Hiro. But once Hiro makes a visit at this 'nerd school' he really wants to go. He enters a contest and wins a scholorship. But when fire breaks out at the school, Tadashi goes in to save Mr. Callaghan but the building explodes and Tadashi dies. I CRIED.</p>
+    <p> Link to Trailer: <a href="www.youtube.com/watch?v=rD5OA6sQ97M"> Big Hero 6 Official Trailer </a> </p>
+    <center>Actor List</center>
+    <ul>
+        <li><a href="http://en.wikipedia.org/wiki/Ryan_Potter">Ryan Potter</a> - Hiro Hamada</li>
+        <li><a href="http://en.wikipedia.org/wiki/Daniel_Henney">Daniel Hanney</a> - Tadashi Hamada</li>
+        <li><a href="http://en.wikipedia.org/wiki/Jamie_Chung">Jamie Chung</a> - Gogo Tomago</li>
+        <li><a href="http://en.wikipedia.org/wiki/G%C3%A9nesis_Rodr%C3%ADguez">Genesis Roriguez</a> - Honey Lemon</li>
+    </ul>
+    <div class="stars">
+      <form action="">
+        <input class="star star-5" id="star-5" type="radio" name="star"/>
+        <label class="star star-5" for="star-5"></label>
+        <input class="star star-4" id="star-4" type="radio" name="star"/>
+        <label class="star star-4" for="star-4"></label>
+        <input class="star star-3" id="star-3" type="radio" name="star"/>
+        <label class="star star-3" for="star-3"></label>
+        <input class="star star-2" id="star-2" type="radio" name="star"/>
+        <label class="star star-2" for="star-2"></label>
+        <input class="star star-1" id="star-1" type="radio" name="star"/>
+        <label class="star star-1" for="star-1"></label>
+      </form>
+    </div>
+    
+</div>
+
+</html>
